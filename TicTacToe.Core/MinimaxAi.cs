@@ -95,24 +95,6 @@
         }
 
         private static string GetCacheKey(Board board, CellState currentPlayer)
-        {
-            var sb = new System.Text.StringBuilder(11);  
-
-            for (int i = 0; i < 9; i++)
-            {
-                sb.Append(board[i] switch
-                {
-                    CellState.Empty => '.',
-                    CellState.X => 'X',
-                    CellState.O => 'O',
-                    _ => '?'
-                });
-            }
-
-            sb.Append('|');
-            sb.Append(currentPlayer == CellState.X ? 'X' : 'O');
-
-            return sb.ToString();
-        }
+            => BoardTransformations.GetCanonicalKey(board, currentPlayer);
     }
 } 
