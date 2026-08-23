@@ -14,3 +14,4 @@
 3) UI - Windows Forms
 4) Тестирование - xUnit
  
+<img width="421" height="520" alt="Image" src="https://github.com/user-attachments/assets/7a5d7fd5-1221-4613-986d-f5eb3ed30a20" />
